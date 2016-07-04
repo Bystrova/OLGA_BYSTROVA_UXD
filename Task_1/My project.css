@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+        div{
+                margin: 0;
+                border: none;
+                font-size: 20px;
+                height: 170px;
+                            }
+        .header {
+                 color: white;
+                 background-color: #111A29;
+                 font-family: helvetica;
+                 font-size: 35px;
+                 vertical-align: middle;
+            background-image: url("header-bg(1).jpg");
+            background-repeat: no-repeat;
+            background-position: 85%;
+                }
+            #difer {
+                color: #91A9B3;
+                font-size: 15px;
+               padding-top: 0;
+               line-height: 5px;
+            }
+            #difer1 {
+                font-size: 20px;
+                line-height: 1px;
+                margin-top: -12px;
+            }
+            .header p {
+                margin-left: 10%;
+                margin-top: 0;
+                padding-top: 20px;
+                margin-bottom: 8px;
+            }
+            #main {
+                 height: 100%;
+                 background-color: #E3F1F9;
+                 margin: 0;
+                margin-bottom: 50px;
+             }
+             #menu {
+                height: 50px;
+                background-color: #BFD4DE;
+                margin: 0;
+                color: #364654;
+            }
+            #menu p {
+                margin-top: 0;
+                margin-left: 14%;
+                vertical-align: middle;
+                font-family: helvetica;
+                font-size: 22px;
+                font-weight: bold;
+                vertical-align: middle;
+                padding-top: 10px;
+            }
+            #content {
+                background-color: #FFFFFF;
+                height: 100%;
+                margin-left: 10%;
+                margin-right: 10%;
+                margin-top: 0;
+                margin-bottom: -50px;
+            }
+            #footer { 
+                background-color: #364654;
+                margin-top: 100px;
+                height: 60px;
+                color: #FFFFFF;
+                vertical-align: bottom;
+              
+            }
+            #footer p {
+                margin-right: 7%;
+                margin-left: 10%;
+                margin-top: 0;
+                font-size: 16px;
+                vertical-align: bottom;
+                padding-top: 1%;
+            }
+        #footer p a {
+            color: #FFFFFF;
+            float: right;
+            display: inline-block;
+            margin-right: 60px;
+            font-size: 16px;
+            font-weight: bold;
+        }    
+        #main p button {
+            background-color: #364654;
+            width: 100px;
+            height: 35px;
+            color: #FFFFFF;
+            margin-left: 30px;
+
+        } 
+        #main span {
+            color: #364654;
+            margin-left: 5%;
+            font-family: arial;
+            font-style: italic;
+        }
+        form p {
+            display: inline-block;
+            font-family: helvetica;
+            font-size: 15px;
+            font-weight: bold;
+            color: #364654;
+            margin-left: 5%;
+            margin-right: 5%;
+            line-height: 40px;
+        }
+        label {
+            float: left;
+            padding-right: 15px;
+            width: 140px;
+            text-align: right;
+        }
+        form p input {
+            height: 30px;
+            width: 300px;
+        }
+       #list {
+            height: 35px;
+            width: 305px;
+        }
+       .wr {
+        height:100%;
+
+        }
+        .right {
+            float: right;
+        }
+        .left {
+        position: relative;
+        }
+button {
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        font-size: 28px;
+    }
+        #difer {
+            font-size: 12px;
+        }
+        #difer1{
+            font-size: 18px;
+    }
+        #menu p {
+            font-size: 18px;
+        }
+    #main span {
+        font-size: 18px;
+    }
+    form input p{
+        width: 200px;
+    }
+   }
+@media screen and (max-width: 600px) {
+    .header {
+        font-size: 28px;
+    }
+    #difer {
+        font-size: 12px;
+    }
+    #difer1{
+        font-size: 18px;
+    }
+    #menu p {
+        font-size: 18px;
+    }
+    #main span {
+        font-size: 18px;
+    }
+    form input p{
+         width: 200px;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .header {
+        font-size: 28px;
+    }
+    #difer {
+        font-size: 12px;
+    }
+    #difer1{
+        font-size: 18px;
+    }
+    #menu p {
+        font-size: 18px;
+    }
+    #main span {
+        font-size: 18px;
+    }
+    form p {
+        line-height: 20px;
+        margin-bottom: 0;
+    }
+    .right {
+        float: left;
+    }
+    form input p{
+       width: 140px;
+    }
+    label {
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: left;
+    }
+}
