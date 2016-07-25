@@ -1,0 +1,577 @@
+html, body {
+    margin: 0;
+    min-height: 100%;
+    min-width: initial;
+    font-family: "Trebuchet MS";
+
+    }
+.main {
+    min-height: 100%;
+    /*max-width: 1366px;*/
+}
+.up {
+    margin: 0;
+    background: #f6f6f6;
+    height: 48px;
+}
+.up-centre {
+    margin-left: 13%;
+    margin-right:13%;
+    height: 168px;
+}
+.up-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    align-items: center;
+}
+.up-flex img {
+    height: 12px;
+}
+.child1 {
+     color: #333333;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.child2 {
+     color: #333333;
+    text-decoration: none;
+}
+
+        /*Logotip*/
+.logo  {
+    margin-right: 13%;
+    margin-left: 13%;
+    height: 168px;
+}
+.logo-flex {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.logo img {
+    height: 96px;
+    margin: 0;
+}
+.logo-info {
+    display: inline-flex;
+}
+.logo .info {
+    padding-top: 20%;
+    height:60px;
+    width: 220px;
+    margin: 0;
+    margin-left: 10%;
+}
+ .logo .info #info1{
+    font-size: 19px;
+    color: #333333;
+
+}
+ .logo .info #info2{
+    font-size: 21px;
+    color: #dc5047;
+}
+ .logo .info #info3{
+    font-size: 14px;
+    color: #333333;
+}
+ .search {
+     margin-top: -15px;
+     padding: 0px;
+
+ }
+.search input {
+    height: 28px;
+    width: 216px;
+    background-image: url("images/search.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    border: solid 1px;
+    margin: 0;
+}
+.search .textBox {
+    height: 38px;
+    width: 216px;
+    border: none;
+    background-color: #333333;
+    margin-bottom: 28px;
+    }
+.search p {
+    color: #FFFFFF;
+    text-align: match-parent;
+    font-size: 18px;
+    padding-top: 6px;
+     }
+.search p span{
+    font-size: 16px;
+    margin-left: 2px;
+}
+.search p img{
+    height: 19px;
+    width: 20px;
+    margin-right: 5px;
+    margin-left: 7px;
+}
+
+     /*Stars*/
+#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+    background: url('images/starsMy.png') no-repeat;
+}
+
+#reviewStars-input {
+
+    overflow: hidden;
+    *zoom: 1;
+
+    position: relative;
+    float: left;
+
+    font-size: 13px;
+    margin-top: -3px;
+    margin-right: 8px;
+}
+
+#reviewStars-input input {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+
+    width: 13px;
+    height: 13px;
+
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+
+#reviewStars-input input:checked ~ label {
+    background-position: 0 -12px;
+    height: 13px;
+    width: 13px;
+}
+
+#reviewStars-input label {
+    background-position: 0 0;
+    height: 13px;
+    width: 13px;
+    float: right;
+    cursor: pointer;
+    margin-right: 3px;
+
+    position: relative;
+    z-index: 2;
+}
+
+#persent {
+    font-size: 13px;
+    float: right;
+    position: relative;
+ }
+
+#reviewStars-input label:hover, #reviewStars-input label:hover ~ label {
+    background-position: 0 -12px;
+    height: 13px;
+    width: 13px;
+}
+           /*--End stars--*/
+             /*  Navigation*/
+
+.clearfix::before,
+.clearfix::after {
+    content: '';
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+ul.nav {
+    height: 72px;
+    vertical-align: middle;
+    display: block;
+    list-style-type: none;
+    padding: 0;
+    background: #333;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+}
+ul.nav li {
+    display: inline-block;
+    float: left;
+    position: relative;
+
+}
+ul.nav li.first {
+    margin-left: 13%;
+}
+
+ul #list li a {
+    font-size: 16px;
+}
+ul.nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 24px;
+}
+
+ul.nav li:hover a {
+    background: #fff;
+    color: #333;
+    height: 52px;
+}
+ul.nav li:hover .down-menu {
+    display: block;
+}
+.down-menu {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+    z-index: 100;
+}
+
+.down-menu ul {
+    display: block;
+    width: 200px;
+    padding: 0;
+}
+
+.down-menu ul li {
+    display: block;
+    color: #333;
+    padding: 5px;
+    cursor: pointer;
+    float: none;
+}
+.down-menu ul li:hover {
+    display: block;
+    background: #333;
+    color: #fff;
+}
+            /*End Navigation*/
+
+
+
+.main-all {
+    margin-right: 13%;
+    margin-left: 13%;
+}
+#slider {             /* Slider */
+   height: 340px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+      margin-top: 86px;
+
+}
+#slider input {
+    display: none;
+}
+#slider > input + label {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 8px;
+    background: rgba(90, 90, 90, 0.1);
+    border: 1px solid rgba(190, 190, 190, 0.8);
+
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+
+    margin-right: 4px;
+    top: 90%;
+    transition: background 0.8s ease-out 0s;
+}
+#slider > input + label:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+#slider > input + label:link {
+    background: rgba(255, 255, 255, 0.8);
+}
+#slider > input:checked + label {
+    background: rgba(220, 220, 220, 0.7);
+}
+#slider > div {
+    position: absolute;
+    top: 0px;
+    left:0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+#slider > input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+#slider > div > p {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+    bottom: 10px;
+    text-align: left;
+    color: #FFFFFF;
+    font-size: 38px;
+    margin-left: 10%;
+}
+#slider > div > p > span{
+    font-weight: bold;
+}
+#slider > div > p > a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 24px;
+    width: 217px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    margin-left: 7%;
+    top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+      /*End Slider*/
+
+    /* Collection*/
+.feature {
+    font-size: 24px;
+    color: #333333;
+    margin-top: 50px;
+    width: 100%;
+}
+.best {
+    font-size: 24px;
+    color: #333333;
+    width: 100%;
+}
+.best-Sellers {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: -15px;
+
+}
+.collect1 {
+  width: 218px;
+  height: 314px;
+    border: 1px solid #b0b0b0;
+    margin-bottom: 20px;
+}
+.collect1-img {                  /*Sprite Collect 1*/
+    display: block;
+    width: 198px;
+    height: 162px;
+    background-image: url("images/sprite.png");
+    background-position: -201px -368px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.collect1 p {
+    font-size: 16px;
+    color: #333333;
+    margin-left: 8px;
+    margin-top: 4px;
+   }
+.price{
+    color: #dc5047;
+    font-size: 19px;
+    margin-left: 8px;
+    margin-top: -12px;
+    margin-bottom: 10px;
+}
+.price span {
+    color: #b0b0b0;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.button {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.button1 {
+    background-color: #FFFFFF;
+    height: 30px;
+    width: 108px;
+    border: 1px solid #b0b0b0;
+    color: #333333;
+    text-decoration: none;
+    float: left;
+    text-align: center;
+    font-size: 18.7px;
+    padding-top: 3px;
+}
+.button2 {
+    background-color: #FFFFFF;
+    height: 30px;
+    width: 71px;
+    border: 1px solid #b0b0b0;
+    color: #333333;
+    text-decoration: none;
+    float: right;
+    text-align: center;
+    font-size: 18.7px;
+    padding-top: 3px;
+}
+.collect2-img {         /*sprite Collect 2*/
+    display: block;
+    width: 198px;
+    height: 162px;
+    background-image: url("images/sprite.png");
+    background-position: -0px -0px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.collect3-img {         /*sprite Collect 3*/
+    display: block;
+    width: 198px;
+    height: 162px;
+    background-image: url("images/sprite.png");
+    background-position:-0px -166px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.collect4-img {         /*sprite Collect 4*/
+    display: block;
+    width: 198px;
+    height: 162px;
+    background-image: url("images/sprite.png");
+    background-position:-0px -335px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.collect5-img {         /*sprite Collect 5*/
+    display: block;
+    width: 198px;
+    height: 162px;
+    background-image: url("images/sprite.png");
+    background-position:-0px -700px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.collect6-img {         /*sprite Collect 6*/
+    display: block;
+    width: 198px;
+    height: 162px;
+    background-image: url("images/sprite.png");
+    background-position:-198px -567px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.collect7-img {         /*sprite Collect 7*/
+    display: block;
+    width: 198px;
+    height: 162px;
+    background-image: url("images/sprite.png");
+    background-position:-0px -502px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.collect8-img {         /*sprite Collect 8*/
+    display: block;
+    width: 198px;
+    height: 162px;
+    background-image: url("images/sprite.png");
+    background-position:-205px -166px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+
+             /*   End Collection*/
+
+               /*Three columns reason of choose us*/
+.reason {
+       display: inline-flex;
+    justify-content: space-between;
+   }
+.reason img {
+
+}
+.reason span {
+    color: #333333;
+    padding-top: -6px;
+    font-size: 21px;
+}
+.reason1, .reason2, .reason3 {
+    width: 30%;
+    text-align: justify;
+    color: #333333;
+}
+    /*  End  Three columns reason of choose us*/
+
+.shape {
+    background-color: #333333;
+    height: 72px;
+    margin: 0;
+    padding: 0;
+
+}
+.shape-main {
+    margin-left: 13%;
+    margin-right: 13%;
+    display: inline-flex;
+
+}
+.shape p {
+    font-size: 21px;
+    color: #FFFFFF;
+    }
+.email input {
+    width: 190px;
+    height: 30px;
+}
+.email .button3 {
+    text-decoration: none;
+    background-color: #f19200;
+    color: #FFFFFF;
+    font-size: 19px;
+    margin-left: -5px;
+    height: 30px;
+  }
+.link a img {
+    height: 45px;
+    width: 45px;
+}
+
+.footer-column {                     /*Footer down*/
+    margin-left: 13%;
+    margin-right: 13%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 50px;
+       }
+.column1, .information, .customer-service, .company-info {
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.column1 {
+    margin-top: 20px;
+}
+.footer-column h1 {
+    font-size: 21px;
+    color: #333333;
+}
+.information {
+    margin-left: 40px;
+}
+.column1 p {
+    font-size: 13px;
+    color: #333333;
+    text-align: justify;
+    }
+.footer-column a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #333333;
+}
+.footer-column a:hover {
+    text-decoration: underline;
+}
