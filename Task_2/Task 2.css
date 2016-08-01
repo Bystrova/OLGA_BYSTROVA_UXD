@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     min-height: 100%;
-    min-width: initial;
+    /*min-width: initial;*/
     font-family: "Trebuchet MS";
 
     }
@@ -57,8 +57,7 @@ html, body {
     display: inline-flex;
 }
 .logo .info {
-    padding-top: 20%;
-    height:60px;
+
     width: 220px;
     margin: 0;
     margin-left: 10%;
@@ -258,12 +257,15 @@ ul.nav li:hover .down-menu {
     margin-left: 13%;
 }
 #slider {             /* Slider */
-   height: 340px;
+   height: 410px;
     width: 100%;
     position: relative;
     text-align: center;
       margin-top: 86px;
 
+}
+#slider img {
+    width: 100%;
 }
 #slider input {
     display: none;
@@ -295,10 +297,10 @@ ul.nav li:hover .down-menu {
 }
 #slider > div {
     position: absolute;
-    top: 0px;
-    left:0px;
-    right: 0px;
-    bottom: 0px;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
     z-index: 0;
 
     visibility: hidden;
@@ -312,13 +314,11 @@ ul.nav li:hover .down-menu {
 }
 #slider > div > p {
     position: absolute;
-    top: 40px;
-    left: 0px;
-    right: 0px;
+    top: 18%;
     bottom: 10px;
     text-align: left;
     color: #FFFFFF;
-    font-size: 38px;
+    font-size: 2.375em;
     margin-left: 10%;
 }
 #slider > div > p > span{
@@ -331,8 +331,7 @@ ul.nav li:hover .down-menu {
     width: 217px;
     height: 40px;
     border: 1px solid #FFFFFF;
-    margin-left: 7%;
-    top: 10px;
+    margin-left: 17%;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -345,17 +344,26 @@ ul.nav li:hover .down-menu {
     margin-top: 50px;
     width: 100%;
 }
+
 .best {
     font-size: 24px;
     color: #333333;
     width: 100%;
 }
-.best-Sellers {
+.collection1 {
+    width: 100%;
     display: inline-flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin-bottom: -15px;
 
+}
+.collection2 {
+    display: flex;
+    justify-content: space-between;
+}
+.collection3 {
+    display: flex;
+    justify-content: space-between;
 }
 .collect1 {
   width: 218px;
@@ -397,7 +405,7 @@ ul.nav li:hover .down-menu {
 .button1 {
     background-color: #FFFFFF;
     height: 30px;
-    width: 108px;
+    width: 60%;
     border: 1px solid #b0b0b0;
     color: #333333;
     text-decoration: none;
@@ -409,7 +417,7 @@ ul.nav li:hover .down-menu {
 .button2 {
     background-color: #FFFFFF;
     height: 30px;
-    width: 71px;
+    width: 34%;
     border: 1px solid #b0b0b0;
     color: #333333;
     text-decoration: none;
@@ -498,6 +506,7 @@ ul.nav li:hover .down-menu {
     color: #333333;
     padding-top: -6px;
     font-size: 21px;
+
 }
 .reason1, .reason2, .reason3 {
     width: 30%;
@@ -511,30 +520,64 @@ ul.nav li:hover .down-menu {
     height: 72px;
     margin: 0;
     padding: 0;
-
+    display: inline-block;
 }
 .shape-main {
+    margin: 0;
     margin-left: 13%;
     margin-right: 13%;
-    display: inline-flex;
-
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
-.shape p {
+.newsletter {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+}
+.newsletter p {
     font-size: 21px;
     color: #FFFFFF;
-    }
-.email input {
-    width: 190px;
+}
+.email-form {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+  }
+.email {
+    display: inline-block;
+    vertical-align: middle;
     height: 30px;
 }
-.email .button3 {
+.email input {
+    width: 190px;
+    height: 100%;
+    padding-top: 0;
+    margin: 0;
+    border: none;
+}
+.email #button3 {
+    margin: 0;
+    display: inline-block;
     text-decoration: none;
     background-color: #f19200;
     color: #FFFFFF;
     font-size: 19px;
+    height: 100%;
+    width: 90px;
+    text-align: center;
+    padding-top: 2px;
     margin-left: -5px;
-    height: 30px;
   }
+.email #button3:hover {
+    cursor: pointer;
+}
+.link {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 40px;
+}
 .link a img {
     height: 45px;
     width: 45px;
@@ -574,4 +617,102 @@ ul.nav li:hover .down-menu {
 }
 .footer-column a:hover {
     text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+
+    #slider > div > p {
+              top: 10%;
+             font-size: 1.8em;
+           }
+    #slider {
+        height: 200px;
+        margin-top: 60px;
+    }
+    #slider > input + label {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        top: 90%;
+        transition: background 0.8s ease-out 0s;
+    }
+    #slider > div > p > a {
+        font-size: 18px;
+    }
+    .collection1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: -15px;
+    }
+    .collection2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .collection3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .newsletter p {
+        font-size: 18px;
+    }
+    .email {
+        height: 27px;
+    }
+    .email input {
+        width: 170px;
+    }
+    .email #button3 {
+        padding-top: 1px;
+        width: 80px;
+    }
+    .email-form {
+        margin-left: 10px;
+    }
+    .link {
+        margin-left: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .logo {
+        height: 210px;
+    }
+    .logo-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 24px;
+    }
+    .search .textBox {
+        margin-top: 5px;
+        margin-bottom: 12px;
+    }
+    #slider {
+        height: 150px;
+        margin-top: 60px;
+    }
+    #slider > div > p {
+        top: 10%;
+        font-size: 1.3em;
+    }
+    #slider > div > p > a {
+        font-size: 13px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .shape {
+        width: 105%;
+    }
+    .newsletter p {
+        font-size: 16px;
+    }
+    .link {
+        margin-left: 10px;
+    }
+    .link a img {
+        height: 30px;
+        width: 30px;
+    }
 }
